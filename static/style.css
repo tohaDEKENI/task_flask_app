@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.add-form{
+    display: flex;
+    justify-content: center;
+}
+
+.add-input{
+    width: 100%;
+    height: 30px;
+}
+.add-sbt-btn{
+    width: 30%;
+    background-color: rgb(118, 202, 118);
+    border: none;
+    cursor: pointer;
+}
+
+.option{
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid rgb(223, 212, 212);
+    background-color: rgb(231, 230, 230);
+}
+.task-div{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(230, 230, 230);
+    padding: 5px;
+    margin: 5px;
+}
+.task{
+    width: 100%;
+    font-size: 20px;
+}
+
+.del-btn{
+    background-color: rgb(240, 102, 102);
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: white;
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.del-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.task-check{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    accent-color: rgb(141, 245, 141);
+}

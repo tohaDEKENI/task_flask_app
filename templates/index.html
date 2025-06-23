@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/" class="add-form" method="POST">
+            <input type="text" name="task" class="add-input"> <br>
+            <input type="submit" value="Ajouter" class="add-sbt-btn">
+        </form>
+        <select name="" id="" class="option">
+            <option value="">All task</option>
+            <option value="">task</option>
+        </select>
+        <div>
+            {%for task in tasks%}
+                <div class="task-div">
+                    <p class="task">{{task[1]}}</p>
+                    <form action="/done/{{task[0]}}" method="POST">
+                        <input type="checkbox" {%if task[2]== 1%} checked {% endif %}class="task-check" onclick="this.form.submit()">
+                    </form>
+                </div>
+                <button  class="del-btn"><a href="/delete/{{task[0]}}" class="del-link">Supprimer</a></button>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
