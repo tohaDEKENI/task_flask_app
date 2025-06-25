@@ -18,7 +18,7 @@ Une petite application web de gestion de tâches (To-Do List) construite avec **
 - Python (Flask)
 - SQLite
 - HTML / Jinja2 (templates)
-- Bootstrap ou CSS classique (à personnaliser)
+- CSS classique
 
 ---
 
